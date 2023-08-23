@@ -1,8 +1,13 @@
 {
-  "name": "Figma Plugin Template",
+  "name": "Push Frame to Master plugin",
   "id": "00000000",
   "api": "1.0.0",
   "main": "dist/code.js",
   "ui": "dist/ui.html",
-  "editorType": ["figma", "figjam"]
+  "menu": [
+    {"name": "Create Dev Resource", "command": "createDevResource"}
+  ],
+  "enableProposedApi": true,
+  "editorType": ["figma", "dev"],
+  "capabilities": ["inspect"]
 }
